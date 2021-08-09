@@ -1,6 +1,5 @@
 import numpy as np
 import matplotlib.pyplot as plt
-import seaborn as sns
 
 
 eps = 1.0
@@ -14,4 +13,5 @@ for i in range(10_000):
     e.append(eps)
 
 plt.plot(np.arange(len(e)), e)
+plt.savefig('decay_graph.png')
 plt.show()
